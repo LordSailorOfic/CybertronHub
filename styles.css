@@ -1,29 +1,34 @@
 body {
-    color: white;
-    background: black;
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
+    color: purple;
+    background-color: black;
+    background-image: linear-gradient(170deg, black, 90%, purple);
+    font-family: "Segoe ui black", sans-serif;
     margin-bottom: 100px;
 }
 
 header {
+    background-image: linear-gradient(30deg, black, 80%, red);
+    margin: 0px;
     border-bottom: solid 2px rgb(255, 0, 0);
     padding: 20px;
     font-size: 32px;
     color: rgb(255, 0, 0);
 }
 
-.direita {
-    flex: right;
-    scale: 25%;
-}
 
 .chamada {
-    background: rgb(233, 102, 102);
+    background-image: url('https://photoshopstar.com/media/2009/08/Transformers_Texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(75%);
+    background-position-x: right;
+    background-color: rgb(50, 50, 50);
     padding-bottom: 80px;
     padding-top: 80px;
     display: flex;
     justify-content: center;
+    color: rgb(0, 0, 0);
+    
 }
 
 .chamada-texto {
@@ -44,6 +49,12 @@ p {
     gap: 10px;
 }
 
+.categoria-comics {
+    display: contents;
+    float: right;
+    gap: 10px;
+}
+
 .categoria {
     padding-left: 20px;
     padding-right: 20px;
@@ -52,14 +63,27 @@ p {
 
 .categoria-videos img {
     opacity: 0.5;
+    border: 3px solid transparent;
     height: 200px;
+    width: 300;
 }
 
 .categoria-videos img:hover {
     opacity: 1.0;
-    border: 3px solid green;
+    border: 3px solid purple;
+}
+
+.categoria-comics img {
+    opacity: 0.5;
+    border: 3px solid transparent;
+    height: 350px;
+}
+
+.categoria-comics img:hover {
+    opacity: 1.0;
+    border: 3px solid purple;
 }
 
 .categoria h2 {
-    color: red;
+    color: purple;
 }
